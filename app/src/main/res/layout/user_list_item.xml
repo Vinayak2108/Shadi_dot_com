@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/card_margin"
+    android:layout_height="@dimen/card_height"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/cardRadius">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:roundedCornerRadius="@dimen/cardRadius"
+        android:scaleType="fitCenter"
+        android:id="@+id/profileImage"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@drawable/gradient_black_to_transperent_overly"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.textOnDark"
+                android:paddingStart="@dimen/layout_std_content_padding"
+                android:paddingEnd="@dimen/layout_std_content_padding"
+                android:textSize="@dimen/name_text_size"
+                tools:text = "Name Name"
+                android:id="@+id/name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_std_content_padding"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.textOnDark"
+                        tools:text="26yrs, Male"
+                        android:id="@+id/ageAndGender"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.textOnDark"
+                        tools:text="8108705700"
+                        android:id="@+id/contact"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.textOnDark"
+                        tools:text="Mumbai"
+                        android:id="@+id/city"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/AppTheme.textOnDark"
+                        android:maxLines="1"
+                        tools:text="India"
+                        android:id="@+id/stateAndCountry"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/controls"
+                android:padding="@dimen/layout_content_padding"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rejectButton"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_dim"
+                        android:layout_height="@dimen/button_dim"
+                        android:src="@drawable/ic_reject"
+                        android:tint="@android:color/white"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/acceptButton"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/button_dim"
+                        android:layout_height="@dimen/button_dim"
+                        android:src="@drawable/ic_accept"
+                        android:tint="@android:color/white"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/AppTheme.textOnDark"
+                android:visibility="gone"
+                android:padding="@dimen/layout_std_content_padding"
+                android:id="@+id/acceptanceStatus"
+                tools:text="You Accepted This Profile"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

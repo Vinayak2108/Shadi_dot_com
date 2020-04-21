@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shaadi.Com</string>
+    <string name="name">%1$s. %2$s %3$s</string>
+    <string name="age_and_gender">%1$dyrs, %2$s</string>
+    <string name="no_contact_shared">No Contact Shared</string>
+    <string name="state_and_country">%1$s, %2$s</string>
+    <string name="accepted">You had accepted this profile</string>
+    <string name="rejected">You had rejected this profile</string>
+</resources>

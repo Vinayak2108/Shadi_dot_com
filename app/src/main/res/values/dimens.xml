@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardRadius">15dp</dimen>
+    <dimen name="card_height">450dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="layout_std_content_padding">5dp</dimen>
+    <dimen name="layout_content_padding">10dp</dimen>
+    <dimen name="button_dim">50dp</dimen>
+    <dimen name="name_text_size">20sp</dimen>
+    <dimen name="normal_text_size">16sp</dimen>
+</resources>
